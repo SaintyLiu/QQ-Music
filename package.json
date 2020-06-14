@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/SaintyLiu/QQ-Music/issues"
   },
-  "homepage": "https://github.com/SaintyLiu/QQ-Music#readme"
+  "homepage": "https://github.com/SaintyLiu/QQ-Music#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
