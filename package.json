@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/SaintyLiu/QQ-Music#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0"
   }
 }
