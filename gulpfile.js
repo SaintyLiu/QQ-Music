@@ -1,6 +1,6 @@
 var gulp = require("gulp");
 var imagemin = require("gulp-imagemin");
-var newer = require("gulp-imagemin");
+var newer = require("gulp-newer");
 
 var folder = {
   src: "./src/",
@@ -14,3 +14,8 @@ gulp.task("images", function () {
     .pipe(imagemin())
     .pipe(gulp.dest(folder.build + "images"));
 });
+
+gulp.task("html", function () {
+  gulp.src(folder.src + "html/*")
+    .pipe(gulp.dest(folder.build + "html"))
+})
