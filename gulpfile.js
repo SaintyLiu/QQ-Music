@@ -16,7 +16,7 @@ gulp.task("images", function () {
     .pipe(gulp.dest(folder.build + "images"));
 });
 
-gulp.task("html", function () {
+gulp.task("html", ["images"], function () {
   gulp.src(folder.src + "html/*")
     .pipe(htmlclean())
     .pipe(gulp.dest(folder.build + "html"));
