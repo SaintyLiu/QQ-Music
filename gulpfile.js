@@ -1,7 +1,7 @@
 var gulp = require("gulp");
 var imagemin = require("gulp-imagemin");
 var newer = require("gulp-newer");
-var htmlclean = require("gulp-htmlclean");
+var htmlClean = require("gulp-htmlclean");
 
 var folder = {
   src: "./src/",
@@ -18,6 +18,7 @@ gulp.task("images", function () {
 
 gulp.task("html", ["images"], function () {
   gulp.src(folder.src + "html/*")
-    .pipe(htmlclean())
+    .pipe(htmlClean())
     .pipe(gulp.dest(folder.build + "html"));
 });
+gulp.task('default', ['html', 'images']);
