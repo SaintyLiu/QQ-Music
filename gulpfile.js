@@ -1,4 +1,4 @@
-var gulp = require("gulp");
+const gulp = require("gulp");
 var imagemin = require("gulp-imagemin");
 var newer = require("gulp-newer");
 var htmlClean = require("gulp-htmlclean");
@@ -21,4 +21,4 @@ gulp.task("html", ["images"], function () {
     .pipe(htmlClean())
     .pipe(gulp.dest(folder.build + "html"));
 });
-gulp.task('default', ['html', 'images']);
+gulp.task('default', ["html", "images"]);
